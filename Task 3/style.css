@@ -1,0 +1,78 @@
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Oxygen', sans-serif;
+      font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(90deg, #c14747, #db6499);
+      height: 100vh;
+  }
+
+  .container {
+      width: 400px;
+     
+     
+      padding: 30px 30px;
+
+  }
+
+  .container :where(textarea, input, select) {
+      width: 100%;
+      outline: none ;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+  }
+
+  .container :where(textarea) {
+      resize: none;
+      overflow: auto;
+      height: 100px;
+      border: 1.1px solid #440e0e;
+  }
+
+  .container .file-option {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      margin-bottom: 10px;
+  }
+
+  .file-option .opt {
+      width: calc(100% / 2 - 8px);
+  }
+
+  .file-option :where(input, select),
+  .container button {
+      border-radius: 10px;
+      height: 25px;
+
+  }
+
+
+  .container button {
+      background-color: rgb(250, 3, 3);
+      cursor: pointer;
+      margin: 3px 0;
+
+      width: 100%;
+      outline: 3px ;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+  }
+
+  .container button:hover{
+    border-radius: 10px;
+    color: black;
+    background: #db6499;
+    transition: 0.4s;
+    outline:invert; 
+  }
